@@ -5,7 +5,8 @@ import {
 } from "@google/generative-ai";
 
 
-const apiKey = process.env.VITE_REACT_APP_GOOGLE_API_KEY;
+
+const apiKey = "AIzaSyAh7benOR6zFWN8z6JyCgAZkkW69PkfWXE";
 const genAI = new GoogleGenerativeAI(apiKey);
 
 const model = genAI.getGenerativeModel({
