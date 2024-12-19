@@ -1,0 +1,36 @@
+.sidebar{
+    padding: 25px 15px;
+}
+
+.sidebar img{
+    width: 20px;
+
+}
+
+.recent{
+    animation: fadeIn 1.5s;
+}
+
+@keyframes fadeIn{
+    0%{
+      opacity: 0;
+    }
+    100%{
+      opacity: 1;
+    }
+}
+
+@media (max-width:600px){
+    .sidebar{
+        display:none;
+    }
+}
+
+.white-icon {
+    filter: invert(100%);
+}
+
+
+.recent::-webkit-scrollbar{
+    display: none;
+}
