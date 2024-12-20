@@ -155,7 +155,11 @@ padding: 0px 24px;
 
     .devloper{
         font-size: 45px;
-        padding: 45px;
+       
+    }
+
+    .paragraph{
+        text-align: center;
     }
 
     .help{
@@ -165,6 +169,10 @@ padding: 0px 24px;
      
     .cards{
         margin-top: 0px;
+    }
+
+    .main .cards{
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
     }
 }
 

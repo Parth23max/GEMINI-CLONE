@@ -19,7 +19,7 @@ function Main() {
                 {!showResult
                     ? <>
                         <div className="greet my-[50px] text-[56px] text-[#c4c7c5] font-[500]">
-                            <p><span className='devloper'>Hello, Developer</span></p>
+                            <p className='paragraph'><span className='devloper'>Hello, Developer</span></p>
                             <p className='help'>How can I help you today?</p>
                         </div>
                         <div className="cards mt-[150px] grid gap-4">
