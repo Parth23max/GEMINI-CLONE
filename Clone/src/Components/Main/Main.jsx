@@ -6,6 +6,8 @@ import { Context } from '../../Context/Context';
 function Main() {
     const { onSent, recentPrompt, showResult, loading, resultData, setInput, input } = useContext(Context);
 
+
+
     return (
         <div className="main order-1 min-h-[100vh] pb-[15vh] relative w-full dark:bg-[#1c1c1e]">
             <div className="nav flex justify-between items-center text-[24px] p-[24px] text-[#585858] ">
@@ -17,8 +19,8 @@ function Main() {
                 {!showResult
                     ? <>
                         <div className="greet my-[50px] text-[56px] text-[#c4c7c5] font-[500]">
-                            <p><span bg->Hello, Developer</span></p>
-                            <p>How can I help you today?</p>
+                            <p><span className='devloper'>Hello, Developer</span></p>
+                            <p className='help'>How can I help you today?</p>
                         </div>
                         <div className="cards mt-[150px] grid gap-4">
                             {[
@@ -29,14 +31,15 @@ function Main() {
                             ].map((card, index) => (
                                 <div
                                     key={index}
-                                    className="card p-4 rounded-lg bg-white text-black shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer 
-                       dark:bg-[#282a2c] dark:text-white dark:hover:bg-[#111111]"
+                                    className="card p-4 rounded-lg bg-white text-black shadow-md hover:shadow-lg transition-shadow duration-300 cursor-pointer dark:bg-[#282a2c] dark:text-white dark:hover:bg-[#111111]"
+                                    onClick={() => onSent(card.text)}
                                 >
                                     <p>{card.text}</p>
                                     <img src={card.icon} alt={`${card.text} Icon`} className="mt-4" />
                                 </div>
                             ))}
                         </div>
+
                     </>
                     : <div className='result'>
                         <div className="resultitle">
@@ -76,7 +79,7 @@ function Main() {
                             <img
                                 className='dark:filter dark:invert cursor-pointer'
                                 src={assets.send_icon}
-                                onClick={() => input.trim() && onSent()} 
+                                onClick={() => input.trim() && onSent()}
                                 alt="Send Icon"
                             />
                         </div>

@@ -138,7 +138,7 @@ padding: 0px 24px;
 @media (max-width:600px){
     .main-bottom input{
         flex:none;
-        width:150px;
+        width:175px
     }
     .main-bottom img{
       
@@ -151,6 +151,20 @@ padding: 0px 24px;
 
     .search-box div{
         gap: 5px ;
+    }
+
+    .devloper{
+        font-size: 45px;
+        padding: 45px;
+    }
+
+    .help{
+        font-size: 24px;
+        text-align: center;
+    }
+     
+    .cards{
+        margin-top: 0px;
     }
 }
 
